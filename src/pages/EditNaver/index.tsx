@@ -92,10 +92,8 @@ const EditNaver: React.FC = () => {
           onSubmit={handleSubmit}
           initialData={{
             name: currentNaver.name,
-            birthdate: currentNaver.birthdate,
             job_role: currentNaver.job_role,
             project: currentNaver.project,
-            admission_date: currentNaver.admission_date,
             url: currentNaver.url,
           }}
         >
@@ -104,7 +102,11 @@ const EditNaver: React.FC = () => {
             <Input name="name" type="text" placeholder="Nome" />
 
             <label>Idade</label>
-            <Input name="birthdate" type="text" placeholder="Idade" />
+            <Input
+              name="birthdate"
+              type="text"
+              placeholder="Data de nascimento"
+            />
 
             <label>Projetos que participou</label>
             <Input
@@ -122,7 +124,7 @@ const EditNaver: React.FC = () => {
             <Input
               name="admission_date"
               type="text"
-              placeholder="Tempo de empresa"
+              placeholder="Data de admissão"
             />
 
             <label>URL da foto do Naver</label>
