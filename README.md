@@ -1,44 +1,77 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+<img src=".github/assets/logo.png" alt="screen" />
 
-In the project directory, you can run:
+</div>
 
-### `yarn start`
+<h1 align="center">Nave Frontend Challenge</h1>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h3 align="center">Create, Read, Update and Delete Navers</h3>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<br />
 
-### `yarn test`
+<div align="center">
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Badge](https://img.shields.io/github/languages/top/Bruno-hub19/nave-frontend-challenge?color=8f3335&logo=typescript&logoColor=blue&style=for-the-badge)
+![Badge](https://img.shields.io/github/repo-size/Bruno-hub19/nave-frontend-challenge?color=8f3335&logo=github&logoColor=black&style=for-the-badge)
+![Badge](https://img.shields.io/github/issues/Bruno-hub19/nave-frontend-challenge?color=8f3335&style=for-the-badge)
+![Badge](https://img.shields.io/github/license/Bruno-hub19/nave-frontend-challenge?color=8f3335&style=for-the-badge)
 
-### `yarn build`
+</div>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+ <a href="#star-screens">Screens</a> •
+ <a href="#gear-technologies">Technologies</a> •
+ <a href="#information_source-how-to-use">How to use</a> •
+ <a href="#hand-author">Author</a>
+</p>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :star: Screens
 
-### `yarn eject`
+<div align="center">
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img src=".github/assets/login.png" alt="screen" />
+<img src=".github/assets/Home.png" alt="screen" />
+<img src=".github/assets/add.png" alt="screen" />
+<img src=".github/assets/read.png" alt="screen" />
+<img src=".github/assets/delete.png" alt="screen" />
+<img src=".github/assets/edit-screen.png" alt="screen" />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## :gear: Technologies
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- React
+- TypeScript
+- React Router Dom
+- ContextAPI
+- Styled Components
+- Unform
+- React Icons
 
-## Learn More
+## :information_source: How to use
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To clone and run this application, you'll need Git, Node.js v10.16 or higher + Yarn v1.13 or higher installed on your computer. From your command line:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  ## Clone this repository
+  $ git clone https://github.com/Bruno-hub19/nave-frontend-challenge.git
+
+  ## Go into the repository
+  $ cd nave-frontend-challenge
+
+  ## Install dependencies
+  $ yarn install
+
+  ## Run the metro bundler
+  $ yarn start
+
+```
+
+## :hand: Author
+
+<strong>Made with :heart: by Bruno Nascimento.</strong>
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/bruno-nascimento-35803217b/)!
