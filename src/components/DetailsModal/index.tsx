@@ -1,5 +1,6 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import { FiTrash2, FiEdit2, FiX } from 'react-icons/fi';
+import { parseISO, format } from 'date-fns';
 
 import { DetailsModalOverlay, DetailsCard, DeleteCard } from './styles';
 
@@ -33,6 +34,25 @@ const DetailsModal: React.FC<ModalProps> = ({
     setDeleteVisible(deleteVisible === false);
   }, [deleteVisible]);
 
+  const parsedNaverBithdate = useMemo(() => {
+    const today = new Date();
+    const todayYear = format(today, 'yyyy');
+
+    const year = parseISO(naver.birthdate).getFullYear();
+
+    return `${Number(todayYear) - year}`;
+  }, [naver.birthdate]);
+
+  const parsedJobTime = useMemo(() => {
+    const today = new Date();
+
+    const todayMonth = format(today, 'MM');
+
+    const naverMonthTime = parseISO(naver.admission_date).getMonth();
+
+    return `${Number(todayMonth) - naverMonthTime}`;
+  }, [naver.admission_date]);
+
   return (
     <DetailsModalOverlay isVisible={isVisible}>
       {deleteVisible === false && (
@@ -48,10 +68,12 @@ const DetailsModal: React.FC<ModalProps> = ({
             <h4>{naver.job_role}</h4>
 
             <span>Idade</span>
-            <p>{naver.birthdate}</p>
+            <p>{parsedNaverBithdate} anos</p>
 
             <span>Tempo de empresa</span>
-            <p>{naver.admission_date}</p>
+            <p>
+              {parsedJobTime} {parsedJobTime === '1' ? 'mês' : 'meses'}
+            </p>
 
             <span>Projetos que participou</span>
             <p>{naver.project}</p>
